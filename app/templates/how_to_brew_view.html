@@ -1,0 +1,26 @@
+<h2>How to Brew</h2>
+  <nav>
+    <ul>
+      <li>
+        <a href="" id="previous" data-ng-click="previous()">Previous</a>
+      </li>
+      <li>
+        <a href="" id="next" data-ng-click="next()">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+
+<div data-ng-if="current === 'getting-started'" data-getting-started></div>
+
+<div data-ng-if="current === 'extracting-sugars'" data-extracting-sugars></div>
+
+<div data-ng-if="current === 'boiling'" data-boiling></div>
+
+<div data-ng-if="current === 'chilling'" data-chilling></div>
+
+<div data-ng-if="current === 'fermentation'" data-fermentation></div>
+
+<div data-ng-if="current === 'bottling'" data-bottling></div>
+
+<div data-ng-if="current === 'sanitation'" data-sanitation></div>
