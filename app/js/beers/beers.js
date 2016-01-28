@@ -3,5 +3,4 @@ module.exports = function(app) {
 	require('./services/beers_service.js')(app);
 	require('./directives/form_directive.js')(app);
 	require('./directives/repeating_stuff_directive.js')(app);
-	require('./directives/transclusion_directive.js')(app);
 };

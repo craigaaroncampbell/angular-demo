@@ -1,5 +1,6 @@
 body {
 	padding: 2%;
+	font-size: 1.2em;
 }
 
 .tablediv {
@@ -7,6 +8,8 @@ body {
 	justify-content: space-around;
 	flex-direction: row;
 }
+
+
 
 li {
 	margin-top: 1%;
@@ -23,6 +26,7 @@ li {
 
 #about-organizer {
 	display: flex;
+
 	justify-content: flex-start;
 	form {
 		display: flex;
@@ -55,3 +59,42 @@ nav {
 	}
 }
 
+.ingredients {
+	display: flex;
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		height: 100%;
+		width: 50%;
+		li {
+			text-align: center;
+			margin: 5%;
+		}
+	}
+	.ingredient-images {
+		height: 50%;
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+
+		img {
+			height:  50%;
+			width: 50%;
+		}
+	}
+}
+
+table {
+	th, td {
+		border: 1px solid black;
+		text-align: center;
+	}
+}
+
+.basic-steps{
+	ol {
+
+	}
+}
