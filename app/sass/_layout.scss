@@ -3,6 +3,11 @@ body {
 	font-size: 1.2em;
 }
 
+img {
+	height: 25%;
+	width: 25%;
+}
+zq
 .tablediv {
 	display: flex;
 	justify-content: space-around;
@@ -68,9 +73,12 @@ nav {
 		flex-direction: column;
 		height: 100%;
 		width: 50%;
+		padding-left: 0;
 		li {
 			text-align: center;
 			margin: 5%;
+			list-style: none;
+
 		}
 	}
 	.ingredient-images {
@@ -97,4 +105,23 @@ table {
 	ol {
 
 	}
+}
+
+.imagecenter {
+	display:flex;
+	justify-content: center;
+	img {
+		height:250px;
+		width:250px;
+	}
+}
+
+.structure {
+	display:flex;
+	justify-content: center;
+}
+
+#glucose{
+	height: 200px;
+	width: 200px;
 }
