@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  app.controller('HowToBrewController', ['$scope', '$http', 'someResource', '$base64', '$location', '$cookies', function($scope, $http, $base64, $location, $cookies) {
+  app.controller('HowToBrewController', ['$scope', '$http', 'someResource', '$location',, function($scope, $http, $location) {
 
     $scope.pages = ['getting-started', 'extracting-sugars', 'boiling', 'chilling', 'fermentation', 'bottling', 'sanitation'];
     $scope.index = 0;
