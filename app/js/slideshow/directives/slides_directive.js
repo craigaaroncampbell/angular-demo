@@ -3,7 +3,11 @@ module.exports = function(app) {
     return {
       restrict: 'AC',
       templateUrl: 'templates/slides.html',
-      transclude: true
+      transclude: true,
+      scope: {
+        text: '=',
+        header: '='
+      }
     };
   });
 };
