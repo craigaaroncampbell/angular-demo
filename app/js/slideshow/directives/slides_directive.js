@@ -6,7 +6,7 @@ module.exports = function(app) {
       transclude: true,
       scope: {
         text: '=',
-        header: '='
+        header: '=',
       }
     };
   });
