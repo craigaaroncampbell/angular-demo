@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  app.controller('SlideShowController', ['$scope', '$http', '$location', function($scope, $http, $location) {
+  app.controller('SlideShowController', ['$scope', function($scope) {
 
     $scope.pages = ['slide1', 'slide2', 'slide3', 'slide4'];
     $scope.index = 0;

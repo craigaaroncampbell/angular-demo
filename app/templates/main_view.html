@@ -1,3 +1,4 @@
+<h1>Slidey McSlideshow</h1>
 <nav>
   <ul>
     <li>
@@ -9,13 +10,11 @@
   </ul>
 </nav>
 
-
-<div data-ng-if="current === 'slide1'" data-slide-one></div>
-
-<div data-ng-if="current === 'slide2'" data-slide-two></div>
-
-<div data-ng-if="current === 'slide3'" data-slide-three></div>
-
-<div data-ng-if="current === 'slide4'" data-slide-four></div>
-
+<section class="slides">
+  <h2>Such Slides</h2>
+  <section data-ng-if="current === 'slide1'" data-slide-one></section>
+  <section data-ng-if="current === 'slide2'" data-slide-two></section>
+  <section data-ng-if="current === 'slide3'" data-slide-three></section>
+  <section data-ng-if="current === 'slide4'" data-slide-four></section>
+</section>
 

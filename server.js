@@ -1,11 +1,8 @@
-var app = require('express')();
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-var PORT = process.env.PORT || 3000;
+app.use(express.static(__dirname + '/build'))
 
-var nonAPIRouter = require(__dirname + '/routes/non_api_routes.js');
-app.use('/' , nonAPIRouter);
-
-app.listen(PORT, function() {
-	console.log('now pouring beer on port: ' + PORT);
-});
+app.listen(PORT, () => console.log('slideshow up on port: ' + PORT));
 

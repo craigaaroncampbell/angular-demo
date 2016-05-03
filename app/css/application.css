@@ -1,0 +1,53 @@
+body {
+  padding: 2%;
+  font-size: 1.2em;
+  background-color: #0088ff;
+}
+
+li {
+  margin-top: 1%;
+  list-style: none;
+}
+
+nav {
+  border: 1px solid white;
+  background-color: #24AB29;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+section section {
+  border: 1px solid white;
+  height: 300px;
+  background-color: #24AB29;
+}
+
+section section h3 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+h1 {
+  text-align: center;
+}
+
+section.slides h2 {
+  color: white;
+  font-weight: normal;
+}
+
+section p {
+  padding: 10px;
+}

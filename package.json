@@ -4,31 +4,20 @@
   "description": "wow such angular slideshow",
   "main": "server.js",
   "scripts": {
-    "test": "./imtoolazytobother"
+    "test": "echo 'What is a test? Never heard of it.'"
   },
   "repository": {
     "type": "git",
-    "url": "nosuchurl"
+    "url": "https://github.com/craigaaroncampbell/angular-demo"
   },
-  "keywords": [
-  "why bother?"
-  ],
   "author": "craigaaroncampbell@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://nope.com"
-  },
-  "homepage": "none",
   "dependencies": {
     "express": "^4.13.3"
   },
   "devDependencies": {
-    "angular": "^1.4.8",
-    "angular-route": "^1.4.8",
+    "angular": "^1.5.5",
     "gulp": "^3.9.0",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-sass": "^2.1.0",
-    "gulp-sourcemaps": "^1.6.0",
     "webpack-stream": "^2.1.1"
   }
 }

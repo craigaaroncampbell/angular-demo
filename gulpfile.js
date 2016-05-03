@@ -1,17 +1,14 @@
-var gulp = require('gulp');
-var webpack = require('webpack-stream');
-var minifyCss = require('gulp-minify-css');
-var sass = require('gulp-sass');
-var maps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const webpack = require('webpack-stream');
 
 gulp.task('default', ['build:dev']);
 
-gulp.task('static:dev', function() {
-	gulp.src(['app/**/*.html'])
+gulp.task('static:dev', () => {
+	gulp.src(['app/**/*.html', 'app/css/**/*.css'])
 	.pipe(gulp.dest('build/'));
 });
 
-gulp.task('webpack:dev', function() {
+gulp.task('webpack:dev', () => {
 	gulp.src('app/js/entry.js')
 	.pipe(webpack({
 		output: {
@@ -21,14 +18,5 @@ gulp.task('webpack:dev', function() {
 	.pipe(gulp.dest('build/'));
 });
 
-gulp.task('sass:dev', function() {
-	gulp.src('./app/sass/**/*.scss')
-	.pipe(maps.init())
-	.pipe(sass().on('error', sass.logError))
-	.pipe(minifyCss())
-	.pipe(maps.write('./'))
-	.pipe(gulp.dest('build/'));
-});
-
-gulp.task('build:dev', ['webpack:dev', 'static:dev', 'sass:dev']);
+gulp.task('build:dev', ['webpack:dev', 'static:dev']);
 
