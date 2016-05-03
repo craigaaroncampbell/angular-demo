@@ -16,7 +16,6 @@ module.exports = function(app) {
       if ($scope.index >= $scope.pages.length) $scope.index = 0;
       $scope.current = $scope.pages[$scope.index];
     };
-
   }]);
 };
 
