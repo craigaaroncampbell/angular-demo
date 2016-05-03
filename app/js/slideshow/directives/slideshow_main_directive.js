@@ -1,9 +1,9 @@
 module.exports = function(app) {
-  app.directive('howToBrew', function() {
+  app.directive('mainView', function() {
     return {
       restrict: 'AC',
-      templateUrl: 'templates/how_to_brew.html',
-      controller: 'HowToBrewController',
+      templateUrl: 'templates/main_view.html',
+      controller: 'SlideShowController',
       scope: {
         previous: '&',
         next: '&'

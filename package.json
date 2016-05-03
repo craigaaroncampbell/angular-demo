@@ -1,50 +1,32 @@
 {
-  "name": "craig_campbell-with-authentication",
+  "name": "slide-show-demo",
   "version": "0.1.0",
-  "description": "mongo rest api with authentication",
+  "description": "wow such angular slideshow",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "./imtoolazytobother"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/craigaaroncampbell/authentication.git"
+    "url": "nosuchurl"
   },
   "keywords": [
-    "mongo",
-    "rest",
-    "api"
+  "why bother?"
   ],
   "author": "craigaaroncampbell@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/craigaaroncampbell/authentication/issues"
+    "url": "https://nope.com"
   },
-  "homepage": "https://github.com/craigaaroncampbell/authentication#readme",
+  "homepage": "none",
   "dependencies": {
-    "authenticat": "latest",
-    "bcrypt": "^0.8.5",
-    "body-parser": "^1.14.1",
-    "eat": "^0.1.1",
-    "express": "^4.13.3",
-    "mongodb": "^2.1.0",
-    "mongoose": "^4.2.5"
+    "express": "^4.13.3"
   },
   "devDependencies": {
     "angular": "^1.4.8",
-    "angular-base64": "^2.0.5",
-    "angular-cookies": "^1.4.8",
-    "angular-mocks": "^1.4.8",
     "angular-route": "^1.4.8",
-    "chai": "^3.4.1",
-    "chai-http": "^1.0.0",
     "gulp": "^3.9.0",
-    "gulp-concat-css": "^2.2.0",
-    "gulp-jscs": "^3.0.2",
-    "gulp-jscs-stylish": "^1.2.1",
-    "gulp-jshint": "^1.12.0",
     "gulp-minify-css": "^1.2.2",
-    "gulp-mocha": "^2.1.3",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "webpack-stream": "^2.1.1"

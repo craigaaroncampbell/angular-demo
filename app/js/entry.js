@@ -3,17 +3,17 @@ require('angular-route');
 
 var angular = window.angular;
 
-var beerApp = angular.module('beerApp', ['ngRoute']);
+var slideShowApp = angular.module('slideShowApp', ['ngRoute']);
 
-require('./howto/howto.js')(beerApp);
+require('./slideshow/slideshow.js')(slideShowApp);
 
-beerApp.config(['$routeProvider', function($route) {
-	$route
-	.when('/', {
-		templateUrl: '/templates/how_to_brew_view.html',
-		controller: 'HowToBrewController'
-	})
-	.otherwise({
-		redirectTo: '/404'
-	});
-}]);
+// slideShowApp.config(['$routeProvider', function($route) {
+// 	$route
+// 	.when('/', {
+// 		templateUrl: '/templates/main_view.html',
+// 		controller: 'SlideShowController'
+// 	})
+// 	.otherwise({
+// 		redirectTo: '/'
+// 	});
+// }]);
