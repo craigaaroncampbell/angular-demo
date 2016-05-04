@@ -1,9 +1,12 @@
 module.exports = function(app) {
   app.directive('slides', function() {
     return {
-      restrict: 'AC',
+      restrict: 'C',
       templateUrl: 'templates/slides.html',
-      transclude: true
+      transclude: true,
+      scope: {
+        slide : '='
+      }
     };
   });
 };

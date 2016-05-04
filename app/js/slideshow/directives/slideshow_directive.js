@@ -1,12 +1,11 @@
 module.exports = function(app) {
-  app.directive('mainView', function() {
+  app.directive('slideShow', function() {
     return {
       restrict: 'AC',
-      templateUrl: 'templates/main_view.html',
+      templateUrl: 'templates/slide_show.html',
       controller: 'SlideShowController',
       scope: {
-        previous: '&',
-        next: '&'
+        slides: '='
       }
     };
   });
