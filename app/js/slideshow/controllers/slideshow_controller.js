@@ -1,7 +1,5 @@
-module.exports = function(app, slides) {
+module.exports = function(app) {
   app.controller('SlideShowController', ['$scope', function($scope) {
-
-    $scope.slides = slides;
     $scope.index = 0;
     $scope.current = $scope.slides[$scope.index];
 

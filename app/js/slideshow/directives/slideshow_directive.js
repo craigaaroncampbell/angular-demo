@@ -5,8 +5,7 @@ module.exports = function(app) {
       templateUrl: 'templates/slide_show.html',
       controller: 'SlideShowController',
       scope: {
-        previous: '&',
-        next: '&'
+        slides: '='
       }
     };
   });
