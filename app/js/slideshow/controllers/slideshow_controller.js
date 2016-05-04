@@ -1,6 +1,4 @@
-const slides = require(__dirname + '/../../../slides/slide_list');
-
-module.exports = function(app) {
+module.exports = function(app, slides) {
   app.controller('SlideShowController', ['$scope', function($scope) {
 
     $scope.slides = slides;
