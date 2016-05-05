@@ -46,15 +46,8 @@
 
 	const angular = __webpack_require__(1);
 	const slideShowApp = angular.module('slideShowApp', []);
-	const slides1 = __webpack_require__(3);
-	const slides2 = __webpack_require__(8);
 
-	__webpack_require__(13)(slideShowApp);
-
-	slideShowApp.run(['$rootScope', function($rootScope) {
-	  $rootScope.slides1 = slides1;
-	  $rootScope.slides2 = slides2;
-	}]);
+	__webpack_require__(3)(slideShowApp);
 
 	slideShowApp.filter('trustUrl', ['$sce', function ($sce) {
 	  return function(url) {
@@ -30949,124 +30942,16 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const slide1 = __webpack_require__(4);
-	const slide2 = __webpack_require__(5);
-	const slide3 = __webpack_require__(6);
-	const slide4 = __webpack_require__(7);
-
-	module.exports = [slide1, slide2, slide3, slide4];
+	module.exports = function(app) {
+	  __webpack_require__(4)(app);
+	  __webpack_require__(5)(app);
+	  __webpack_require__(16)(app);
+	  __webpack_require__(17)(app);
+	};
 
 
 /***/ },
 /* 4 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  header: 'Slide 1',
-	  text: 'You can\'t wait to see the next slide. GO FOR IT!!!'
-	};
-
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  header: 'Slide 2',
-	  text: 'Rick Rolls. So awesome you can\'t even stand it.',
-	  imgUrl: 'https://nerdist.com/wp-content/uploads/2014/12/Rick-Rolls.jpg',
-	  imgAlt: 'Rick Rolls',
-	  audio: 'https://upload.wikimedia.org/wikipedia/en/d/d0/Rick_Astley_-_Never_Gonna_Give_You_Up.ogg'
-	};
-
-
-
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	module.exports =  {
-	  header: 'Slide 3',
-	  text: 'Wow such slide 3 text'
-	};
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  header: 'Slide 4',
-	  text: 'end of this slide deck...'
-	};
-
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	const slide5 = __webpack_require__(9);
-	const slide6 = __webpack_require__(10);
-	const slide7 = __webpack_require__(11);
-	const slide8 = __webpack_require__(12);
-
-	module.exports = [slide5, slide6, slide7, slide8];
-
-
-/***/ },
-/* 9 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  header: 'Slide 5',
-	  text: 'such slide 5. meh'
-	};
-
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  header: 'Slide 6',
-	  text: 'This is the most awesome slide ever. Unless you see SLIDE 2! Totes the best thing ever!'
-	};
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	module.exports =  {
-	  header: 'Slide 7',
-	  text: 'meh'
-	};
-
-
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  header: 'Slide 8',
-	  text: 'That\'s all folks!'
-	};
-
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(app) {
-	  __webpack_require__(14)(app);
-	  __webpack_require__(15)(app);
-	  __webpack_require__(16)(app);
-	};
-
-
-/***/ },
-/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
@@ -31088,7 +30973,128 @@
 
 
 /***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(app) {
+	  app.controller('SlideDataController', ['$scope', function($scope){
+	    $scope.slides1 = __webpack_require__(6);
+	    $scope.slides2 = __webpack_require__(11);
+	  }]);
+	};
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const slide1 = __webpack_require__(7);
+	const slide2 = __webpack_require__(8);
+	const slide3 = __webpack_require__(9);
+	const slide4 = __webpack_require__(10);
+
+	module.exports = [slide1, slide2, slide3, slide4];
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  header: 'Slide 1',
+	  text: 'You can\'t wait to see the next slide. GO FOR IT!!!'
+	};
+
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  header: 'Slide 2',
+	  text: 'Rick Rolls. So awesome you can\'t even stand it.',
+	  imgUrl: 'https://nerdist.com/wp-content/uploads/2014/12/Rick-Rolls.jpg',
+	  imgAlt: 'Rick Rolls',
+	  audio: 'https://upload.wikimedia.org/wikipedia/en/d/d0/Rick_Astley_-_Never_Gonna_Give_You_Up.ogg'
+	};
+
+
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	module.exports =  {
+	  header: 'Slide 3',
+	  text: 'Wow such slide 3 text'
+	};
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  header: 'Slide 4',
+	  text: 'end of this slide deck...'
+	};
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const slide5 = __webpack_require__(12);
+	const slide6 = __webpack_require__(13);
+	const slide7 = __webpack_require__(14);
+	const slide8 = __webpack_require__(15);
+
+	module.exports = [slide5, slide6, slide7, slide8];
+
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  header: 'Slide 5',
+	  text: 'such slide 5. meh'
+	};
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  header: 'Slide 6',
+	  text: 'This is the most awesome slide ever. Unless you see SLIDE 2! Totes the best thing ever!'
+	};
+
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	module.exports =  {
+	  header: 'Slide 7',
+	  text: 'meh'
+	};
+
+
+/***/ },
 /* 15 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  header: 'Slide 8',
+	  text: 'That\'s all folks!'
+	};
+
+
+/***/ },
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
@@ -31108,7 +31114,7 @@
 
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
