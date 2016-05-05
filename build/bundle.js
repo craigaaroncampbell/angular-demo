@@ -56,6 +56,12 @@
 	  $rootScope.slides2 = slides2;
 	}]);
 
+	slideShowApp.filter('trustUrl', ['$sce', function ($sce) {
+	  return function(url) {
+	    return $sce.trustAsResourceUrl(url);
+	  };
+	}]);
+
 
 /***/ },
 /* 1 */
@@ -30971,6 +30977,8 @@
 	  imgAlt: 'Rick Rolls',
 	  audio: 'https://upload.wikimedia.org/wikipedia/en/d/d0/Rick_Astley_-_Never_Gonna_Give_You_Up.ogg'
 	};
+
+
 
 
 /***/ },

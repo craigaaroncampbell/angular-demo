@@ -9,3 +9,9 @@ slideShowApp.run(['$rootScope', function($rootScope) {
   $rootScope.slides1 = slides1;
   $rootScope.slides2 = slides2;
 }]);
+
+slideShowApp.filter('trustUrl', ['$sce', function ($sce) {
+  return function(url) {
+    return $sce.trustAsResourceUrl(url);
+  };
+}]);
