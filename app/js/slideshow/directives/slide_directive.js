@@ -1,11 +1,12 @@
 module.exports = function(app) {
-  app.directive('slides', function() {
+  app.directive('slide', function() {
     return {
-      restrict: 'C',
-      templateUrl: 'templates/slides.html',
+      restrict: 'A',
+      templateUrl: 'templates/slide.html',
       transclude: true,
       scope: {
-        slide : '='
+        slides : '=',
+        index: '=',
       }
     };
   });

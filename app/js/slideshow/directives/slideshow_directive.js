@@ -1,11 +1,13 @@
 module.exports = function(app) {
   app.directive('slideShow', function() {
     return {
-      restrict: 'AC',
+      restrict: 'A',
       templateUrl: 'templates/slide_show.html',
       controller: 'SlideShowController',
       scope: {
-        // slides: = ''
+        slides: '=',
+        title: '@',
+        subtitle: '@'
       }
     };
   });

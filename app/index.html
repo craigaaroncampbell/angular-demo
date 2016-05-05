@@ -6,7 +6,19 @@
 </head>
 
 <body data-ng-app="slideShowApp">
-  <main data-slide-show></main>
+  <section data-slide-show data-title="Slidey McSlideshow"  data-subtitle="Such Slides" data-slides="[
+      {header: 'Slide 1', text: 'here is a fucking slide'},
+      {header: 'Slide 2', text: 'here is another goddamn slide'},
+      {header: 'Slide 3', text: 'one fucking more slide'},
+      {header: 'Slide 4', text: 'more shit'}]">
+  </section>
+
+  <section data-slide-show data-title="" data-subtitle="Such Other Slides" data-slides="[
+      {header: 'Slide 5', text: 'holy shit more slides'},
+      {header: 'Slide 6', text: 'no fucking way!'},
+      {header: 'Slide 7', text: 'such fucking shit wow'},
+      {header: 'Slide 8', text: 'aint no mo shit'}]">
+  </section>
   <script src="/bundle.js"></script>
 </body>
 </html>
