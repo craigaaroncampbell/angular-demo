@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo 'What is a test? Never heard of it.'",
-    "start": "node server"
+    "start": "./node_modules/gulp/bin/gulp.js && node server"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
   <section>
-     <img ng-if="slides[index].imgUrl" src="{{slides[index].imgUrl}}" alt="{{slides[index].imgAlt}}">
+    <img ng-if="slides[index].imgUrl" ng-src="{{slides[index].imgUrl | trustUrl}}" alt="{{slides[index].imgAlt}}">
     <audio ng-if="slides[index].audio" ng-src="{{slides[index].audio | trustUrl}}" autoplay>
     </audio>
     <h3>{{slides[index].header}}</h3>
