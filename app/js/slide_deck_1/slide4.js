@@ -1,4 +1,4 @@
 module.exports = {
   header: 'Slide 4',
-  text: 'That\'s all folks!'
+  text: 'end of this slide deck...'
 };

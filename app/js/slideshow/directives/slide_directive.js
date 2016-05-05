@@ -3,9 +3,8 @@ module.exports = function(app) {
     return {
       restrict: 'A',
       templateUrl: 'templates/slide.html',
-      transclude: true,
       scope: {
-        slides : '=',
+        slides: '=',
         index: '=',
       }
     };
