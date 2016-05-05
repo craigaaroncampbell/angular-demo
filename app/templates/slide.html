@@ -1,4 +1,7 @@
 <section>
+   <img ng-if="slides[index].imgUrl" src="{{slides[index].imgUrl}}" alt="{{slides[index].imgAlt}}">
+   <audio ng-if="slides[index].audio" src="https://upload.wikimedia.org/wikipedia/en/d/d0/Rick_Astley_-_Never_Gonna_Give_You_Up.ogg" autoplay>
+  </audio>
   <h3>{{slides[index].header}}</h3>
   <p>{{slides[index].text}}</p>
 </section>

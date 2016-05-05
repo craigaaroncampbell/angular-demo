@@ -1,4 +1,3 @@
-
 module.exports = function(app) {
   app.controller('SlideShowController', ['$scope', function($scope) {
     $scope.index = 0;

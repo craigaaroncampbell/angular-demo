@@ -64,3 +64,9 @@ section p {
 body > section {
   margin: 10px 0px;
 }
+
+img {
+  height: 200px;
+  width: 200px;
+  float: left;
+}
