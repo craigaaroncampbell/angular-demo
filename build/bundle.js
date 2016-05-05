@@ -30963,7 +30963,7 @@
 
 	module.exports = {
 	  header: 'Slide 1',
-	  text: 'Authoritatively unleash fully researched process improvements with emerging ROI. Rapidiously reinvent leading-edge benefits for distinctive catalysts for change. Competently synthesize quality initiatives before web-enabled "outside the box" thinking. Rapidiously extend leveraged channels via frictionless e-services. Monotonectally reintermediate goal-oriented synergy through alternative architectures.'
+	  text: 'You can\'t wait to see the next slide. GO FOR IT!!!'
 	};
 
 
@@ -31020,7 +31020,7 @@
 
 	module.exports = {
 	  header: 'Slide 5',
-	  text: 'such slide 5'
+	  text: 'such slide 5. meh'
 	};
 
 
@@ -31030,7 +31030,7 @@
 
 	module.exports = {
 	  header: 'Slide 6',
-	  text: 'This is the most awesome slide ever.'
+	  text: 'This is the most awesome slide ever. Unless you see SLIDE 2! Totes the best thing ever!'
 	};
 
 
