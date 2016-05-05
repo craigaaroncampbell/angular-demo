@@ -1,5 +1,6 @@
-<h1>Slidey McSlideshow</h1>
+<h1>{{title}}</h1>
 <nav>
+  <h2>{{subtitle}}</h2>
   <ul>
     <li>
       <a href="" id="previous" data-ng-click="previous()">Previous</a>
@@ -11,7 +12,10 @@
 </nav>
 
 
-<section class="slides">
-  <h2>Such Slides</h2>
+<section
+  data-slide
+  data-slides="slides"
+  data-index="index"
+>
 </section>
 

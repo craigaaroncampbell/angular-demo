@@ -10,13 +10,27 @@ li {
 }
 
 nav {
+  display: flex;
+  justify-content: space-around;
+
   border: 1px solid white;
   background-color: #24AB29;
+  margin: 10px 0px;
 }
 
 nav ul {
   display: flex;
   justify-content: space-around;
+  padding-left: 0;
+  width: 66.66%;
+
+}
+
+nav h2 {
+  color: white;
+  font-weight: normal;
+  width: 33.33%;
+  text-align: center;
 }
 
 nav ul li {
@@ -27,13 +41,13 @@ a:visited{
   color: white;
 }
 
-section section {
+section section section {
   border: 1px solid white;
-  height: 300px;
+  height: 200px;
   background-color: #24AB29;
 }
 
-section section h3 {
+section section section h3 {
   text-align: center;
   color: white;
   font-weight: normal;
@@ -43,11 +57,10 @@ h1 {
   text-align: center;
 }
 
-section.slides h2 {
-  color: white;
-  font-weight: normal;
-}
-
 section p {
   padding: 10px;
+}
+
+body > section {
+  margin: 10px 0px;
 }
