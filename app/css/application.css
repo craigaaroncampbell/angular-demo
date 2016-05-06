@@ -65,8 +65,30 @@ body > section {
   margin: 10px 0px;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-  float: left;
+@keyframes Rickroll{
+
+  0% {
+    left: 0%;
+    transform:rotate(0deg);
+  }
+  50% {
+    left: 50%;
+    transform:rotate(180deg);
+  }
+  100% {
+    left: 100%;
+    transform:rotate(360deg);
+  }
+}
+img{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  position:fixed;
+  top:50%;
+  left:0%;
+  animation-name: Rickroll;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
