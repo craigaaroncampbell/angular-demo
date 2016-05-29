@@ -1,7 +1,7 @@
-  <section>
-    <img ng-if="slides[index].imgUrl" ng-src="{{slides[index].imgUrl | trustUrl}}" alt="{{slides[index].imgAlt}}">
-    <audio ng-if="slides[index].audio" ng-src="{{slides[index].audio | trustUrl}}" autoplay>
-    </audio>
-    <h3>{{slides[index].header}}</h3>
-    <p>{{slides[index].text}}</p>
-  </section>
+<section>
+  <img ng-if="slides[index].imgUrl" ng-src="{{slides[index].imgUrl | trustUrl}}" alt="{{slides[index].imgAlt}}">
+  <audio ng-if="slides[index].audio" ng-src="{{slides[index].audio | trustUrl}}" autoplay>
+  </audio>
+  <h3>{{slides[index].header}}</h3>
+  <p>{{slides[index].text}}</p>
+</section>
